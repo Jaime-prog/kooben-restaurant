@@ -1,9 +1,24 @@
-<section class="hero relative h-screen overflow-hidden">
-    <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover">
-      <source src="/videos/yucateca.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-primary-100">
-      <h1 class="tagline text-4xl font-bold mb-4">Saborea las Tradiciones</h1>
-      <a href="#menu" class="menu-btn bg-secondary-400 text-primary-100 py-2 px-4 rounded-md hover:bg-secondary-500 transition-colors">Explora Nuestro Menú</a>
+---
+title: "Yucatan Cuisine Restaurant"
+description: "Experience the Flavors of Yucatan"
+---
+
+<template>
+  <header class="bg-cover bg-center h-screen flex items-center justify-center text-white" style="background-image: url('/images/yucatan-cuisine.jpg')">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold mb-4">Experience the Flavors of Yucatan</h1>
+      <p class="text-xl mb-8">Authentic Yucatan Cuisine Prepared with Love</p>
+      <a href="#reservation" class="btn btn-primary">Make a Reservation</a>
     </div>
-  </section>
+  </header>
+</template>
+
+<style>
+  .btn {
+    @apply py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-yellow-500 hover:bg-yellow-600 text-white;
+  }
+</style>

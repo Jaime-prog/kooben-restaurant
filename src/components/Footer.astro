@@ -1,25 +1,38 @@
-<footer class="bg-secondary-400 text-primary-100 py-8">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="info">
-        <h3 class="text-xl font-bold mb-2">Información</h3>
-        <p>Dirección: Calle Principal #123, Mérida, Yucatán</p>
-        <p>Horarios: Lunes a Sábado, 12:00 - 22:00</p>
-        <p>Teléfono: +52 (999) 123-4567</p>
-      </div>
-      <div class="enlaces">
-        <h3 class="text-xl font-bold mb-2">Enlaces Útiles</h3>
-        <ul>
-          <li><a href="#" class="hover:underline">Artículos sobre Cocina Yucateca</a></li>
-          <li><a href="#" class="hover:underline">Preguntas Frecuentes</a></li>
-          <li><a href="#" class="contact-btn bg-primary-200 text-secondary-400 py-2 px-4 rounded-md hover:bg-primary-300 transition-colors">Contáctanos</a></li>
-        </ul>
-      </div>
-      <div class="redes-sociales">
-        <h3 class="text-xl font-bold mb-2">Síguenos</h3>
-        <ul>
-          <li><a href="#" class="hover:underline">Facebook</a></li>
-          <li><a href="#" class="hover:underline">Instagram</a></li>
-          <li><a href="#" class="hover:underline">Twitter</a></li>
-        </ul>
-      </div>
-    </div>
+---
+const currentYear = new Date().getFullYear()
+
+---
+
+<footer
+  class="rounded-lg shadow m-4 bg-black/5 dark:bg-white/10 dark:shadow-white/20 backdrop-blur-lg w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center"
+>
+  <div
+    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4 px-4 md:px-0"
+  >
+    <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
+      >© {currentYear}
+      <a href="https://github.com/Jaime-prog" class="hover:underline">Jaime López •
+      </a>
+    </span>
+    <ul
+      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
+    >
+     
+    <ul class="flex flex-col text-base">
+        <li>
+            <span class="text-slate-700 font-bold text-base">Elsewhere</span>
+        </li>
+        <li class="flex flex-row justify-between">
+            <a href="https://github.com/Jaime-prog" class="hover:underline me-4 md:me-6">Github</a>
+        </li>
+        <li class="flex flex-row justify-between">
+            <a href="https://github.com/Jaime-prog" class="hover:underline me-4 md:me-6">CV</a>
+        </li>
+        <li class="flex flex-row justify-between">
+            <a href="https://www.linkedin.com/in/jaime-lopez-hernandez/" class="hover:underline me-4 md:me-6">LinkedIn</a>
+        </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</footer>
